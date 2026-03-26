@@ -1,4 +1,4 @@
-# StackShift
+# StackSift
 
 > **AI-Powered SRE & Log-Analysis Platform**
 > Built for the LIFE Fellows AI Engineering Capstone — Cohort 2026
@@ -60,7 +60,7 @@
 ## 📁 Project Structure
 
 ```
-StackShift/
+StackSift/
 ├── docs/
 │   ├── ai-log.md           # AI Engineering session log
 │   └── milestones/         # Capstone deliverables
@@ -101,7 +101,7 @@ docker compose up -d
 ### 3. Run the backend
 ```bash
 cd src/backend
-dotnet run --project StackShift.Api
+dotnet run --project StackSift.Api
 ```
 
 ### 4. Run the frontend

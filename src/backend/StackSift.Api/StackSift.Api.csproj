@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StackShift.Application\StackShift.Application.csproj" />
-    <ProjectReference Include="..\StackShift.Infrastructure\StackShift.Infrastructure.csproj" />
+    <ProjectReference Include="..\StackSift.Application\StackSift.Application.csproj" />
+    <ProjectReference Include="..\StackSift.Infrastructure\StackSift.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

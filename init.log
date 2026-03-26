@@ -1,4 +1,4 @@
-🚀 StackShift — Project Initialization
+🚀 StackSift — Project Initialization
 =======================================
 🔧 Setting up .NET 10 backend...
 The template "Solution File" was created successfully.
@@ -6,7 +6,7 @@ The template "Solution File" was created successfully.
 The template "ASP.NET Core Web API" was created successfully.
 
 Processing post-creation actions...
-Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj:
+Restoring /home/drdtrn/Work/StackSift/src/backend/StackSift.Api/StackSift.Api.csproj:
   Determining projects to restore...
   All projects are up-to-date for restore.
 Restore succeeded.
@@ -15,7 +15,7 @@ Restore succeeded.
 The template "Class Library" was created successfully.
 
 Processing post-creation actions...
-Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj:
+Restoring /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj:
   Determining projects to restore...
   All projects are up-to-date for restore.
 Restore succeeded.
@@ -24,7 +24,7 @@ Restore succeeded.
 The template "Class Library" was created successfully.
 
 Processing post-creation actions...
-Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj:
+Restoring /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj:
   Determining projects to restore...
   All projects are up-to-date for restore.
 Restore succeeded.
@@ -33,22 +33,22 @@ Restore succeeded.
 The template "Class Library" was created successfully.
 
 Processing post-creation actions...
-Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Domain/StackShift.Domain.csproj:
+Restoring /home/drdtrn/Work/StackSift/src/backend/StackSift.Domain/StackSift.Domain.csproj:
   Determining projects to restore...
   All projects are up-to-date for restore.
 Restore succeeded.
 
 
-Reference `..\StackShift.Application\StackShift.Application.csproj` added to the project.
-Reference `..\StackShift.Infrastructure\StackShift.Infrastructure.csproj` added to the project.
-Reference `..\StackShift.Application\StackShift.Application.csproj` added to the project.
-Reference `..\StackShift.Domain\StackShift.Domain.csproj` added to the project.
+Reference `..\StackSift.Application\StackSift.Application.csproj` added to the project.
+Reference `..\StackSift.Infrastructure\StackSift.Infrastructure.csproj` added to the project.
+Reference `..\StackSift.Application\StackSift.Application.csproj` added to the project.
+Reference `..\StackSift.Domain\StackSift.Domain.csproj` added to the project.
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
-info : Adding PackageReference for package 'MediatR' into project 'StackShift.Api/StackShift.Api.csproj'.
+info : Adding PackageReference for package 'MediatR' into project 'StackSift.Api/StackSift.Api.csproj'.
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/mediatr/index.json
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/mediatr/index.json 3751ms
-info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj...
+info : Restoring packages for /home/drdtrn/Work/StackSift/src/backend/StackSift.Api/StackSift.Api.csproj...
 info :   GET https://api.nuget.org/v3-flatcontainer/mediatr/index.json
 info :   OK https://api.nuget.org/v3-flatcontainer/mediatr/index.json 4452ms
 info :   GET https://api.nuget.org/v3-flatcontainer/mediatr/14.1.0/mediatr.14.1.0.nupkg
@@ -82,15 +82,15 @@ info : Installed MediatR.Contracts 2.0.1 from https://api.nuget.org/v3/index.jso
 info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
-info : Package 'MediatR' is compatible with all the specified frameworks in project 'StackShift.Api/StackShift.Api.csproj'.
-info : PackageReference for package 'MediatR' version '14.1.0' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj'.
-info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/obj/project.assets.json
-log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj (in 26.98 sec).
+info : Package 'MediatR' is compatible with all the specified frameworks in project 'StackSift.Api/StackSift.Api.csproj'.
+info : PackageReference for package 'MediatR' version '14.1.0' added to file '/home/drdtrn/Work/StackSift/src/backend/StackSift.Api/StackSift.Api.csproj'.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackSift/src/backend/StackSift.Api/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackSift/src/backend/StackSift.Api/StackSift.Api.csproj (in 26.98 sec).
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
-info : Adding PackageReference for package 'MediatR' into project 'StackShift.Application/StackShift.Application.csproj'.
+info : Adding PackageReference for package 'MediatR' into project 'StackSift.Application/StackSift.Application.csproj'.
 info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/mediatr/index.json
-info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj...
+info : Restoring packages for /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj...
 info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
 info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
 info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 2264ms
@@ -107,17 +107,17 @@ info : Installed Microsoft.Extensions.Logging.Abstractions 8.0.0 from https://ap
 info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
-info : Package 'MediatR' is compatible with all the specified frameworks in project 'StackShift.Application/StackShift.Application.csproj'.
-info : PackageReference for package 'MediatR' version '14.1.0' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj'.
-info : Generating MSBuild file /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/obj/StackShift.Application.csproj.nuget.g.targets.
-info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/obj/project.assets.json
-log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj (in 6.77 sec).
+info : Package 'MediatR' is compatible with all the specified frameworks in project 'StackSift.Application/StackSift.Application.csproj'.
+info : PackageReference for package 'MediatR' version '14.1.0' added to file '/home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj'.
+info : Generating MSBuild file /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/obj/StackSift.Application.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj (in 6.77 sec).
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
-info : Adding PackageReference for package 'FluentValidation.DependencyInjectionExtensions' into project 'StackShift.Application/StackShift.Application.csproj'.
+info : Adding PackageReference for package 'FluentValidation.DependencyInjectionExtensions' into project 'StackSift.Application/StackSift.Application.csproj'.
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/fluentvalidation.dependencyinjectionextensions/index.json
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/fluentvalidation.dependencyinjectionextensions/index.json 1277ms
-info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj...
+info : Restoring packages for /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj...
 info :   GET https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/index.json
 info :   OK https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/index.json 3422ms
 info :   GET https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg
@@ -135,13 +135,13 @@ info : Installed Microsoft.Extensions.DependencyInjection.Abstractions 2.1.0 fro
 info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
-info : Package 'FluentValidation.DependencyInjectionExtensions' is compatible with all the specified frameworks in project 'StackShift.Application/StackShift.Application.csproj'.
-info : PackageReference for package 'FluentValidation.DependencyInjectionExtensions' version '12.1.1' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj'.
-info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/obj/project.assets.json
-log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj (in 6.51 sec).
+info : Package 'FluentValidation.DependencyInjectionExtensions' is compatible with all the specified frameworks in project 'StackSift.Application/StackSift.Application.csproj'.
+info : PackageReference for package 'FluentValidation.DependencyInjectionExtensions' version '12.1.1' added to file '/home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj'.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackSift/src/backend/StackSift.Application/StackSift.Application.csproj (in 6.51 sec).
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
-info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'StackSift.Infrastructure/StackSift.Infrastructure.csproj'.
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json 37348ms
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json
@@ -154,19 +154,19 @@ info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityf
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json 444ms
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json 398ms
-info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj...
+info : Restoring packages for /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj...
 info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
-info : Package 'Microsoft.EntityFrameworkCore' is compatible with all the specified frameworks in project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
-info : PackageReference for package 'Microsoft.EntityFrameworkCore' version '10.0.5' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
-info : Generating MSBuild file /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/StackShift.Infrastructure.csproj.nuget.g.props.
-info : Generating MSBuild file /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/StackShift.Infrastructure.csproj.nuget.g.targets.
-info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/project.assets.json
-log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj (in 190 ms).
+info : Package 'Microsoft.EntityFrameworkCore' is compatible with all the specified frameworks in project 'StackSift.Infrastructure/StackSift.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore' version '10.0.5' added to file '/home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj'.
+info : Generating MSBuild file /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/obj/StackSift.Infrastructure.csproj.nuget.g.props.
+info : Generating MSBuild file /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/obj/StackSift.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj (in 190 ms).
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
 info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
-info : Adding PackageReference for package 'Npgsql.EntityFrameworkCore.PostgreSQL' into project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info : Adding PackageReference for package 'Npgsql.EntityFrameworkCore.PostgreSQL' into project 'StackSift.Infrastructure/StackSift.Infrastructure.csproj'.
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/index.json
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/index.json 2259ms
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/0.0.1-alpha1/5.0.10.json
@@ -175,7 +175,7 @@ info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityfram
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/6.0.0-preview1/10.0.0-preview.5.json 442ms
 info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/10.0.0-preview.7/11.0.0-preview.2.json
 info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/10.0.0-preview.7/11.0.0-preview.2.json 400ms
-info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj...
+info : Restoring packages for /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj...
 info :   GET https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/index.json
 info :   OK https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/index.json 3424ms
 info :   GET https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/10.0.1/npgsql.entityframeworkcore.postgresql.10.0.1.nupkg
@@ -214,12 +214,12 @@ info : Installed Npgsql 10.0.2 from https://api.nuget.org/v3/index.json to /home
 info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
 info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
-info : Package 'Npgsql.EntityFrameworkCore.PostgreSQL' is compatible with all the specified frameworks in project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
-info : PackageReference for package 'Npgsql.EntityFrameworkCore.PostgreSQL' version '10.0.1' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
-info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/project.assets.json
-log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj (in 10.18 sec).
+info : Package 'Npgsql.EntityFrameworkCore.PostgreSQL' is compatible with all the specified frameworks in project 'StackSift.Infrastructure/StackSift.Infrastructure.csproj'.
+info : PackageReference for package 'Npgsql.EntityFrameworkCore.PostgreSQL' version '10.0.1' added to file '/home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj'.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackSift/src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj (in 10.18 sec).
 ⚛️ Setting up Next.js 15 frontend...
-Creating a new Next.js app in /home/drdtrn/Work/StackShift/src/frontend.
+Creating a new Next.js app in /home/drdtrn/Work/StackSift/src/frontend.
 
 Using npm.
 
@@ -252,9 +252,9 @@ found 0 vulnerabilities
 Generating route types...
 ✓ Types generated successfully
 
-Success! Created frontend at /home/drdtrn/Work/StackShift/src/frontend
+Success! Created frontend at /home/drdtrn/Work/StackSift/src/frontend
 
-[main (root-commit) 5f4eee8] chore: initialize StackShift monorepo
+[main (root-commit) 5f4eee8] chore: initialize StackSift monorepo
  45 files changed, 7828 insertions(+)
  create mode 100644 .cursorrules
  create mode 100644 .gitignore
@@ -268,19 +268,19 @@ Success! Created frontend at /home/drdtrn/Work/StackShift/src/frontend
  create mode 100755 init-stackshift.sh
  create mode 100644 init.log
  create mode 100644 pnpm-workspace.yaml
- create mode 100644 src/backend/StackShift.Api/Program.cs
- create mode 100644 src/backend/StackShift.Api/Properties/launchSettings.json
- create mode 100644 src/backend/StackShift.Api/StackShift.Api.csproj
- create mode 100644 src/backend/StackShift.Api/StackShift.Api.http
- create mode 100644 src/backend/StackShift.Api/appsettings.Development.json
- create mode 100644 src/backend/StackShift.Api/appsettings.json
- create mode 100644 src/backend/StackShift.Application/Class1.cs
- create mode 100644 src/backend/StackShift.Application/StackShift.Application.csproj
- create mode 100644 src/backend/StackShift.Domain/Class1.cs
- create mode 100644 src/backend/StackShift.Domain/StackShift.Domain.csproj
- create mode 100644 src/backend/StackShift.Infrastructure/Class1.cs
- create mode 100644 src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj
- create mode 100644 src/backend/StackShift.slnx
+ create mode 100644 src/backend/StackSift.Api/Program.cs
+ create mode 100644 src/backend/StackSift.Api/Properties/launchSettings.json
+ create mode 100644 src/backend/StackSift.Api/StackSift.Api.csproj
+ create mode 100644 src/backend/StackSift.Api/StackSift.Api.http
+ create mode 100644 src/backend/StackSift.Api/appsettings.Development.json
+ create mode 100644 src/backend/StackSift.Api/appsettings.json
+ create mode 100644 src/backend/StackSift.Application/Class1.cs
+ create mode 100644 src/backend/StackSift.Application/StackSift.Application.csproj
+ create mode 100644 src/backend/StackSift.Domain/Class1.cs
+ create mode 100644 src/backend/StackSift.Domain/StackSift.Domain.csproj
+ create mode 100644 src/backend/StackSift.Infrastructure/Class1.cs
+ create mode 100644 src/backend/StackSift.Infrastructure/StackSift.Infrastructure.csproj
+ create mode 100644 src/backend/StackSift.slnx
  create mode 100644 src/frontend/.gitignore
  create mode 100644 src/frontend/AGENTS.md
  create mode 100644 src/frontend/CLAUDE.md

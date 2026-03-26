@@ -1,6 +1,6 @@
-# StackShift — Copilot Instructions
+# StackSift — Copilot Instructions
 
-StackShift is an **AI-Powered SRE & Log-Analysis Platform** — a monorepo with a .NET 10 Clean Architecture backend and a Next.js 15 App Router frontend, backed by PostgreSQL+pgvector, Elasticsearch, Redis, RabbitMQ, and Keycloak running in Docker Compose.
+StackSift is an **AI-Powered SRE & Log-Analysis Platform** — a monorepo with a .NET 10 Clean Architecture backend and a Next.js 15 App Router frontend, backed by PostgreSQL+pgvector, Elasticsearch, Redis, RabbitMQ, and Keycloak running in Docker Compose.
 
 ---
 
@@ -16,7 +16,7 @@ docker compose logs -f <service>                      # tail logs for a service
 ### Backend (.NET 10)
 ```bash
 cd src/backend
-dotnet run --project StackShift.Api                   # start API (http://localhost:5190)
+dotnet run --project StackSift.Api                   # start API (http://localhost:5190)
 dotnet build                                          # build solution
 dotnet test                                           # run all tests (once configured)
 dotnet test --filter "FullyQualifiedName~<TestName>"  # run a single test
@@ -69,7 +69,7 @@ All routes live under `src/app/` (App Router). Route groups `(auth)` and `(dashb
 
 ### Backend
 - **Controllers are thin** — validate route params, call `_mediator.Send(command)`, return result. No business logic.
-- **CQRS via MediatR** — every operation is a `Command` (mutation) or `Query` (read) in `StackShift.Application`.
+- **CQRS via MediatR** — every operation is a `Command` (mutation) or `Query` (read) in `StackSift.Application`.
 - **FluentValidation** for all input: `RuleFor(x => x.Email).NotEmpty().EmailAddress()`.
 - **C# 13 idioms** — primary constructors (`public class Handler(IRepo repo)`), collection expressions (`[item1, item2]`), nullable reference types enabled.
 - **No secrets in code** — use environment variables; Keycloak is the only auth path (no local JWT generation, no mock auth).

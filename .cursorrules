@@ -1,4 +1,4 @@
-# StackShift Architecture Guardrails
+# StackSift Architecture Guardrails
 
 ## Backend
 - Use .NET 10 and C# 13 features (Primary Constructors, Collection Expressions).
