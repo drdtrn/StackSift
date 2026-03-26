@@ -254,3 +254,51 @@ Generating route types...
 
 Success! Created frontend at /home/drdtrn/Work/StackShift/src/frontend
 
+[main (root-commit) 5f4eee8] chore: initialize StackShift monorepo
+ 45 files changed, 7828 insertions(+)
+ create mode 100644 .cursorrules
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 docs/ai-log.md
+ create mode 100644 docs/milestones/.gitkeep
+ create mode 100644 infrastructure/docker/docker-compose.yml
+ create mode 100644 infrastructure/docker/prometheus/prometheus.yml
+ create mode 100644 infrastructure/k8s/.gitkeep
+ create mode 100644 infrastructure/terraform/.gitkeep
+ create mode 100755 init-stackshift.sh
+ create mode 100644 init.log
+ create mode 100644 pnpm-workspace.yaml
+ create mode 100644 src/backend/StackShift.Api/Program.cs
+ create mode 100644 src/backend/StackShift.Api/Properties/launchSettings.json
+ create mode 100644 src/backend/StackShift.Api/StackShift.Api.csproj
+ create mode 100644 src/backend/StackShift.Api/StackShift.Api.http
+ create mode 100644 src/backend/StackShift.Api/appsettings.Development.json
+ create mode 100644 src/backend/StackShift.Api/appsettings.json
+ create mode 100644 src/backend/StackShift.Application/Class1.cs
+ create mode 100644 src/backend/StackShift.Application/StackShift.Application.csproj
+ create mode 100644 src/backend/StackShift.Domain/Class1.cs
+ create mode 100644 src/backend/StackShift.Domain/StackShift.Domain.csproj
+ create mode 100644 src/backend/StackShift.Infrastructure/Class1.cs
+ create mode 100644 src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj
+ create mode 100644 src/backend/StackShift.slnx
+ create mode 100644 src/frontend/.gitignore
+ create mode 100644 src/frontend/AGENTS.md
+ create mode 100644 src/frontend/CLAUDE.md
+ create mode 100644 src/frontend/README.md
+ create mode 100644 src/frontend/eslint.config.mjs
+ create mode 100644 src/frontend/next.config.ts
+ create mode 100644 src/frontend/package-lock.json
+ create mode 100644 src/frontend/package.json
+ create mode 100644 src/frontend/postcss.config.mjs
+ create mode 100644 src/frontend/public/file.svg
+ create mode 100644 src/frontend/public/globe.svg
+ create mode 100644 src/frontend/public/next.svg
+ create mode 100644 src/frontend/public/vercel.svg
+ create mode 100644 src/frontend/public/window.svg
+ create mode 100644 src/frontend/src/app/favicon.ico
+ create mode 100644 src/frontend/src/app/globals.css
+ create mode 100644 src/frontend/src/app/layout.tsx
+ create mode 100644 src/frontend/src/app/page.tsx
+ create mode 100644 src/frontend/tsconfig.json
+ create mode 100644 src/shared/.gitkeep
+✅ Done.
