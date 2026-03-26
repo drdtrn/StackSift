@@ -1,0 +1,256 @@
+🚀 StackShift — Project Initialization
+=======================================
+🔧 Setting up .NET 10 backend...
+The template "Solution File" was created successfully.
+
+The template "ASP.NET Core Web API" was created successfully.
+
+Processing post-creation actions...
+Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Restore succeeded.
+
+
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Restore succeeded.
+
+
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Restore succeeded.
+
+
+The template "Class Library" was created successfully.
+
+Processing post-creation actions...
+Restoring /home/drdtrn/Work/StackShift/src/backend/StackShift.Domain/StackShift.Domain.csproj:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+Restore succeeded.
+
+
+Reference `..\StackShift.Application\StackShift.Application.csproj` added to the project.
+Reference `..\StackShift.Infrastructure\StackShift.Infrastructure.csproj` added to the project.
+Reference `..\StackShift.Application\StackShift.Application.csproj` added to the project.
+Reference `..\StackShift.Domain\StackShift.Domain.csproj` added to the project.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'MediatR' into project 'StackShift.Api/StackShift.Api.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/mediatr/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/mediatr/index.json 3751ms
+info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/mediatr/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/mediatr/index.json 4452ms
+info :   GET https://api.nuget.org/v3-flatcontainer/mediatr/14.1.0/mediatr.14.1.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/mediatr/14.1.0/mediatr.14.1.0.nupkg 487ms
+info :   GET https://api.nuget.org/v3-flatcontainer/mediatr.contracts/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/mediatr.contracts/index.json 399ms
+info :   GET https://api.nuget.org/v3-flatcontainer/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/index.json 801ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg 377ms
+info :   OK https://api.nuget.org/v3-flatcontainer/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg 805ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/index.json 389ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg 251ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/index.json 385ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg 377ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/index.json 396ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg 245ms
+info : Installed MediatR 14.1.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/mediatr/14.1.0 with content hash pdxza1pLqAk+06LV3THzNJrw5K5Ah6EC17TEkoC90gsAxwtXDJAQrGuDSDinHGgxWKWEn5ebqTNN3k1bLJOb0g==.
+info : Installed Microsoft.IdentityModel.Logging 8.14.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.identitymodel.logging/8.14.0 with content hash eqqnemdW38CKZEHS6diA50BV94QICozDZEvSrsvN3SJXUFwVB9gy+/oz76gldP7nZliA16IglXjXTCTdmU/Ejg==.
+info : Installed Microsoft.IdentityModel.Abstractions 8.14.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0 with content hash iwbCpSjD3ehfTwBhtSNEtKPK0ICun6ov7Ibx6ISNA9bfwIyzI2Siwyi9eJFCJBwxowK9xcA1mj+jBWiigeqgcQ==.
+info : Installed Microsoft.IdentityModel.JsonWebTokens 8.14.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0 with content hash 4jOpiA4THdtpLyMdAb24dtj7+6GmvhOhxf5XHLYWmPKF8ApEnApal1UnJsKO4HxUWRXDA6C4WQVfYyqsRhpNpQ==.
+info : Installed Microsoft.IdentityModel.Tokens 8.14.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.identitymodel.tokens/8.14.0 with content hash lKIZiBiGd36k02TCdMHp1KlNWisyIvQxcYJvIkz7P4gSQ9zi8dgh6S5Grj8NNG7HWYIPfQymGyoZ6JB5d1Lo1g==.
+info : Installed MediatR.Contracts 2.0.1 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/mediatr.contracts/2.0.1 with content hash FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
+info : Package 'MediatR' is compatible with all the specified frameworks in project 'StackShift.Api/StackShift.Api.csproj'.
+info : PackageReference for package 'MediatR' version '14.1.0' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj'.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Api/StackShift.Api.csproj (in 26.98 sec).
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'MediatR' into project 'StackShift.Application/StackShift.Application.csproj'.
+info :   CACHE https://api.nuget.org/v3/registration5-gz-semver2/mediatr/index.json
+info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 2264ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json 2264ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg 325ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg 341ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg 252ms
+info : Installed Microsoft.Extensions.DependencyInjection.Abstractions 10.0.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0 with content hash L3AdmZ1WOK4XXT5YFPEwyt0ep6l8lGIPs7F5OOBZc77Zqeo01Of7XXICy47628sdVl0v/owxYJTe86DTgFwKCA==.
+info : Installed Microsoft.Extensions.Logging.Abstractions 10.0.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0 with content hash FU/IfjDfwaMuKr414SSQNTIti/69bHEMb+QKrskRb26oVqpx3lNFXMjs/RC9ZUuhBhcwDM2BwOgoMw+PZ+beqQ==.
+info : Installed Microsoft.Extensions.Logging.Abstractions 8.0.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0 with content hash arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
+info : Package 'MediatR' is compatible with all the specified frameworks in project 'StackShift.Application/StackShift.Application.csproj'.
+info : PackageReference for package 'MediatR' version '14.1.0' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj'.
+info : Generating MSBuild file /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/obj/StackShift.Application.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj (in 6.77 sec).
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'FluentValidation.DependencyInjectionExtensions' into project 'StackShift.Application/StackShift.Application.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/fluentvalidation.dependencyinjectionextensions/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/fluentvalidation.dependencyinjectionextensions/index.json 1277ms
+info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/index.json 3422ms
+info :   GET https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg 598ms
+info :   GET https://api.nuget.org/v3-flatcontainer/fluentvalidation/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/fluentvalidation/index.json 402ms
+info :   GET https://api.nuget.org/v3-flatcontainer/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg 675ms
+info :   OK https://api.nuget.org/v3-flatcontainer/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg 597ms
+info : Installed FluentValidation 12.1.1 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/fluentvalidation/12.1.1 with content hash EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==.
+info : Installed FluentValidation.DependencyInjectionExtensions 12.1.1 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.1 with content hash D0VXh4dtjjX2aQizuaa0g6R8X3U1JaVqJPfGCvLwZX9t/O2h7tkpbitbadQMfwcgSPdDbI2vDxuwRMv/Uf9dHA==.
+info : Installed Microsoft.Extensions.DependencyInjection.Abstractions 2.1.0 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0 with content hash 8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
+info : Package 'FluentValidation.DependencyInjectionExtensions' is compatible with all the specified frameworks in project 'StackShift.Application/StackShift.Application.csproj'.
+info : PackageReference for package 'FluentValidation.DependencyInjectionExtensions' version '12.1.1' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj'.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Application/StackShift.Application.csproj (in 6.51 sec).
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Microsoft.EntityFrameworkCore' into project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/index.json 37348ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/0.0.1-alpha/3.1.2.json 463ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.3/6.0.0-preview.6.21352.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/3.1.3/6.0.0-preview.6.21352.1.json 454ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/6.0.0-preview.7.21378.4/7.0.17.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/6.0.0-preview.7.21378.4/7.0.17.json 461ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/7.0.18/10.0.0-preview.3.25171.6.json 444ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.entityframeworkcore/page/10.0.0-preview.4.25258.110/11.0.0-preview.2.26159.112.json 398ms
+info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj...
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
+info : Package 'Microsoft.EntityFrameworkCore' is compatible with all the specified frameworks in project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info : PackageReference for package 'Microsoft.EntityFrameworkCore' version '10.0.5' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info : Generating MSBuild file /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/StackShift.Infrastructure.csproj.nuget.g.props.
+info : Generating MSBuild file /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/StackShift.Infrastructure.csproj.nuget.g.targets.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj (in 190 ms).
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/codesignctl.pem'.
+info : X.509 certificate chain validation will use the fallback certificate bundle at '/usr/share/dotnet/sdk/10.0.104/trustedroots/timestampctl.pem'.
+info : Adding PackageReference for package 'Npgsql.EntityFrameworkCore.PostgreSQL' into project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/index.json 2259ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/0.0.1-alpha1/5.0.10.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/0.0.1-alpha1/5.0.10.json 873ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/6.0.0-preview1/10.0.0-preview.5.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/6.0.0-preview1/10.0.0-preview.5.json 442ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/10.0.0-preview.7/11.0.0-preview.2.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/npgsql.entityframeworkcore.postgresql/page/10.0.0-preview.7/11.0.0-preview.2.json 400ms
+info : Restoring packages for /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj...
+info :   GET https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/index.json 3424ms
+info :   GET https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/10.0.1/npgsql.entityframeworkcore.postgresql.10.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/npgsql.entityframeworkcore.postgresql/10.0.1/npgsql.entityframeworkcore.postgresql.10.0.1.nupkg 327ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/npgsql/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json 753ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/10.0.4/microsoft.entityframeworkcore.relational.10.0.4.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/npgsql/index.json 1154ms
+info :   GET https://api.nuget.org/v3-flatcontainer/npgsql/10.0.2/npgsql.10.0.2.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/10.0.4/microsoft.entityframeworkcore.relational.10.0.4.nupkg 678ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/npgsql/10.0.2/npgsql.10.0.2.nupkg 1042ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json 948ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/10.0.4/microsoft.extensions.configuration.abstractions.10.0.4.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json 1343ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/10.0.4/microsoft.extensions.caching.memory.10.0.4.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json 1730ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/10.0.4/microsoft.extensions.logging.10.0.4.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/10.0.4/microsoft.extensions.configuration.abstractions.10.0.4.nupkg 1032ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/10.0.4/microsoft.extensions.caching.memory.10.0.4.nupkg 895ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/10.0.4/microsoft.extensions.logging.10.0.4.nupkg 780ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json 968ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.4/microsoft.extensions.primitives.10.0.4.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/10.0.4/microsoft.extensions.primitives.10.0.4.nupkg 252ms
+info : Installed Microsoft.Extensions.Primitives 10.0.4 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.primitives/10.0.4 with content hash lABYqiRH9HgYJsjzO3W7+cucUwWXhEkiyrRylANdIubnzcESlkIsLowXpQ4E+sc7kjMLbk1hk5oxw4qTKowTEg==.
+info : Installed Microsoft.Extensions.Logging 10.0.4 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.logging/10.0.4 with content hash S8+6fCuMOhJZGk8sGFtOy3VsF9mk9x4UOL59GM91REiA/fmCDjunKKIw4RmStG87qyXPfxelDJf2pXIbTuaBdw==.
+info : Installed Npgsql.EntityFrameworkCore.PostgreSQL 10.0.1 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/npgsql.entityframeworkcore.postgresql/10.0.1 with content hash P6EwH0Q4xkaA264iNZDqCPhWt8pscfUGxXazDQg4noBfqjoOlk4hKWfvBjF9ZX3R/9JybRmmJfmxr2iBMj0EpA==.
+info : Installed Microsoft.Extensions.Configuration.Abstractions 10.0.4 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.4 with content hash 3x9X9SMAMdAoEwWxHfsT2a9dTBqEtfYfbEOFw+UPtBshEH2gHWJeazxrZ1FK1O18MoCbe1NxINg5qciB01pEcg==.
+info : Installed Microsoft.Extensions.Caching.Memory 10.0.4 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.extensions.caching.memory/10.0.4 with content hash CLLussNUMdSbyJOu4VBF7sqskHGB/5N1EcFzrqG/HsPATN8fCRUcfp0qns1VwkxKHwxrtYCh5FKe+kM81Q1PHA==.
+info : Installed Microsoft.EntityFrameworkCore.Relational 10.0.4 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.4 with content hash DOTjTHy93W3TwpMLM4SCm0n57Sc0Jj3+m2S6LSTstKyBB34eT1UouaMS19mpWwvtj42+sRiEjA3+rOTNoNzXFQ==.
+info : Installed Npgsql 10.0.2 from https://api.nuget.org/v3/index.json to /home/drdtrn/.nuget/packages/npgsql/10.0.2 with content hash q5RfBI+wywJSFUNDE1L4ZbHEHCFTblo8Uf6A6oe4feOUFYiUQXyAf9GBh5qEZpvJaHiEbpBPkQumjEhXCJxdrg==.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.03.26.05.52.57/2026.03.26.11.52.58/vulnerability.update.json
+info : Package 'Npgsql.EntityFrameworkCore.PostgreSQL' is compatible with all the specified frameworks in project 'StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info : PackageReference for package 'Npgsql.EntityFrameworkCore.PostgreSQL' version '10.0.1' added to file '/home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj'.
+info : Writing assets file to disk. Path: /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/obj/project.assets.json
+log  : Restored /home/drdtrn/Work/StackShift/src/backend/StackShift.Infrastructure/StackShift.Infrastructure.csproj (in 10.18 sec).
+⚛️ Setting up Next.js 15 frontend...
+Creating a new Next.js app in /home/drdtrn/Work/StackShift/src/frontend.
+
+Using npm.
+
+Initializing project with template: app-tw 
+
+
+Installing dependencies:
+- next
+- react
+- react-dom
+
+Installing devDependencies:
+- @tailwindcss/postcss
+- @types/node
+- @types/react
+- @types/react-dom
+- eslint
+- eslint-config-next
+- tailwindcss
+- typescript
+
+
+added 360 packages, and audited 361 packages in 29s
+
+144 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Generating route types...
+✓ Types generated successfully
+
+Success! Created frontend at /home/drdtrn/Work/StackShift/src/frontend
+

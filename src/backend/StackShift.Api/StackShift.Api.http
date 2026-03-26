@@ -1,0 +1,6 @@
+@StackShift.Api_HostAddress = http://localhost:5190
+
+GET {{StackShift.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

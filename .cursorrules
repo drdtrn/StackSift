@@ -1,0 +1,35 @@
+# StackShift Architecture Guardrails
+
+## Backend
+- Use .NET 10 and C# 13 features (Primary Constructors, Collection Expressions).
+- Follow Clean Architecture strictly: Api → Infrastructure → Application → Domain.
+- No cross-layer violations: Domain must never reference Infrastructure.
+- Use FluentValidation for all input validation.
+- Use MediatR for CQRS (Commands/Queries must be in Application layer).
+- Use Entity Framework Core with PostgreSQL (with pgvector for semantic search).
+- Controllers must be thin — delegate all logic to MediatR handlers.
+
+## Frontend
+- Use Next.js 15+ App Router only. No Pages Router.
+- TypeScript strict mode is mandatory (`"strict": true` in tsconfig).
+- Use Tailwind CSS for styling. No inline styles or CSS modules unless justified.
+- Use TanStack Query v5 for all server-state management.
+- Use Zod for all runtime schema validation (API responses, forms).
+- No `any` types — enforce via ESLint rule `@typescript-eslint/no-explicit-any`.
+
+## Git
+- Enforce Conventional Commits: feat:, fix:, docs:, chore:, refactor:, test:, ci:
+- Branch naming: feature/, fix/, docs/, chore/
+- All PRs must reference a GitHub Issue.
+- No direct commits to `main`.
+
+## Documentation
+- Maintain a "doc-first" approach: every feature starts with docs/ai-log.md entry.
+- Every new API endpoint must be documented in OpenAPI (Swagger).
+- Every significant AI-assisted session must be logged in docs/ai-log.md.
+- README must always reflect the current architecture and running instructions.
+
+## Security
+- No secrets in code. Use environment variables and Docker secrets.
+- Keycloak is the sole Identity Provider — no mock auth, no local JWT generation.
+- All API endpoints must be protected (except explicitly public ones).
