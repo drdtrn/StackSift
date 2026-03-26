@@ -14,9 +14,9 @@
 
 | Name | Role |
 |------|------|
-| **Dardan** | Lead Architect / Backend |
-| **Jona** | Frontend / AI Integration |
-| **Arnis** | DevOps / Infrastructure |
+| **Dardan** | DevOps Lead / Fullstack |
+| **Jona** | Product Lead / Frontend |
+| **Albin** | BackEnd Lead  |
 
 ---
 
