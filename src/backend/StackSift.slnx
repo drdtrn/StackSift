@@ -1,2 +1,6 @@
 <Solution>
+  <Project Path="StackSift.Api/StackSift.Api.csproj" />
+  <Project Path="StackSift.Application/StackSift.Application.csproj" />
+  <Project Path="StackSift.Infrastructure/StackSift.Infrastructure.csproj" />
+  <Project Path="StackSift.Domain/StackSift.Domain.csproj" />
 </Solution>
