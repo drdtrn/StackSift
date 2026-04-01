@@ -8,10 +8,11 @@
 [![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-### Figma Wireframes
+### Project Links
 | Project | URL |
 |---------|-----|
-| StackSift | https://www.figma.com/make/ybDIrt1q4CQcqhjgkHMW70/UI-Mockup-for-StackSift?t=ZAyVpA04Nbu9r2Te-20&fullscreen=1&preview-route=%2Fdashboard |
+| StackSift - Figma | https://www.figma.com/make/ybDIrt1q4CQcqhjgkHMW70/UI-Mockup-for-StackSift?t=ZAyVpA04Nbu9r2Te-20&fullscreen=1&preview-route=%2Fdashboard |
+| StackSift - Trello | https://trello.com/b/5GMXG8Lq/stacksift |
 
 ---
 
