@@ -6,7 +6,7 @@ import { useToastStore } from '@/app/hooks/useToastStore';
 // Framer Motion mock
 jest.mock('framer-motion', () => ({
   motion: {
-    div: ({ children, ...props }: React.HTMLAttributes<HTMLDivElement> & { exit?: unknown; initial?: unknown; animate?: unknown; transition?: unknown; layout?: unknown }) => (
+    div: ({ children, layout: _layout, initial: _initial, animate: _animate, exit: _exit, transition: _transition, ...props }: React.HTMLAttributes<HTMLDivElement> & { exit?: unknown; initial?: unknown; animate?: unknown; transition?: unknown; layout?: unknown }) => (
       <div {...props}>{children}</div>
     ),
   },
@@ -53,10 +53,9 @@ describe('ToastContainer + useToastStore', () => {
 
   it('removeToast removes only the targeted toast', () => {
     render(<ToastContainer />);
-    let id1 = '';
     let id2 = '';
     act(() => {
-      id1 = useToastStore.getState().addToast({ variant: 'success', message: 'Keep me' });
+      useToastStore.getState().addToast({ variant: 'success', message: 'Keep me' });
       id2 = useToastStore.getState().addToast({ variant: 'error', message: 'Remove me' });
     });
     act(() => {

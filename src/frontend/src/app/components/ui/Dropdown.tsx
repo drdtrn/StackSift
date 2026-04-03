@@ -74,7 +74,6 @@ export function Dropdown({
   const [focusedIndex, setFocusedIndex] = useState(0);
   const menuId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<HTMLButtonElement>(null);
   const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // Close on click outside.
@@ -105,7 +104,9 @@ export function Dropdown({
 
   const closeMenu = () => {
     setOpen(false);
-    triggerRef.current?.focus();
+    // Return focus to the trigger — identified by the ARIA attribute we inject,
+    // avoiding a ref that would be read during render (react-hooks/refs).
+    containerRef.current?.querySelector<HTMLElement>('[aria-haspopup="menu"]')?.focus();
   };
 
   const handleTriggerKeyDown = (e: React.KeyboardEvent) => {
@@ -135,19 +136,42 @@ export function Dropdown({
   return (
     <DropdownCtx.Provider value={{ close: closeMenu }}>
       <div ref={containerRef} className={cn('relative inline-block', className)}>
-        {/* Trigger wrapper — clones the trigger element and injects ARIA props */}
-        <button
-          ref={triggerRef}
-          type="button"
-          aria-haspopup="menu"
-          aria-expanded={open}
-          aria-controls={menuId}
-          onClick={() => (open ? closeMenu() : openMenu())}
-          onKeyDown={handleTriggerKeyDown}
-          className="contents"
-        >
-          {trigger}
-        </button>
+        {/* Trigger — ARIA props are injected via cloneElement so we never nest
+            an interactive element inside another interactive element.
+            If trigger is not a React element (e.g. a plain string), it is
+            wrapped in a semantically correct <button>. */}
+        {React.isValidElement(trigger) ? (
+          React.cloneElement(
+            trigger as React.ReactElement<React.HTMLAttributes<HTMLElement>>,
+            // eslint-disable-next-line react-hooks/refs
+            {
+              'aria-haspopup': 'menu' as const,
+              'aria-expanded': open,
+              'aria-controls': menuId,
+              onClick: (e: React.MouseEvent<HTMLElement>) => {
+                const origClick = (trigger as React.ReactElement<React.HTMLAttributes<HTMLElement>>).props.onClick;
+                if (origClick) origClick(e);
+                if (open) closeMenu(); else openMenu();
+              },
+              onKeyDown: (e: React.KeyboardEvent<HTMLElement>) => {
+                const origKeyDown = (trigger as React.ReactElement<React.HTMLAttributes<HTMLElement>>).props.onKeyDown;
+                if (origKeyDown) origKeyDown(e);
+                handleTriggerKeyDown(e);
+              },
+            },
+          )
+        ) : (
+          <button
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded={open}
+            aria-controls={menuId}
+            onClick={() => { if (open) closeMenu(); else openMenu(); }}
+            onKeyDown={handleTriggerKeyDown}
+          >
+            {trigger}
+          </button>
+        )}
 
         {open && (
           <div
