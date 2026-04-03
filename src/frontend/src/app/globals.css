@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
+/* 1. DEFINE RAW TOKENS (The Source of Truth) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --canvas: #0F1117;
+  --surface: #1A1D27;
+  --elevated: #21253A;
+  --line: #2E3348;
+  --primary: #F1F3F9;
+  --muted: #8B90A7;
+
+  --critical: #EF4444;
+  --high: #F97316;
+  --medium: #EAB308;
+  --low: #3B82F6;
+  --info: #6B7280;
+
+  --critical-bg: rgba(239, 68, 68, 0.15);
+  --high-bg: rgba(249, 115, 22, 0.15);
+  --medium-bg: rgba(234, 179, 8, 0.15);
+  --low-bg: rgba(59, 130, 246, 0.15);
+  --info-bg: rgba(107, 114, 128, 0.15);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 2. LIGHT MODE OVERRIDES */
+.light {
+  --canvas: #FFFFFF;
+  --surface: #F8F9FC;
+  --elevated: #F1F3F9;
+  --line: #E2E5EF;
+  --primary: #111318;
+  --muted: #6B7280;
+
+  --critical: #DC2626;
+  --high: #EA6C00;
+  --medium: #CA8A04;
+  --low: #2563EB;
+  --info: #4B5563;
+
+  --critical-bg: rgba(220, 38, 38, 0.1);
+  --high-bg: rgba(234, 108, 0, 0.1);
+  --medium-bg: rgba(202, 138, 4, 0.1);
+  --low-bg: rgba(37, 99, 235, 0.1);
+  --info-bg: rgba(75, 85, 99, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+
+  --color-critical: var(--critical);
+  --color-high: var(--high);
+  --color-medium: var(--medium);
+  --color-low: var(--low);
+  --color-info: var(--info);
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--canvas);
+  color: var(--primary);
 }
