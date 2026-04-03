@@ -36,3 +36,19 @@ export type { SeparatorProps } from './Separator';
 
 export { Tooltip } from './Tooltip';
 export type { TooltipProps, TooltipPlacement } from './Tooltip';
+
+// ── Data Display Components (FE-04) ─────────────────────────────────────────
+
+export { Dropdown } from './Dropdown';
+export type { DropdownProps, DropdownItem } from './Dropdown';
+
+export { EmptyState } from './EmptyState';
+export type { EmptyStateProps, EmptyStateCTA } from './EmptyState';
+
+export { Modal } from './Modal';
+export type { ModalProps } from './Modal';
+
+export { ToastContainer } from './Toast';
+
+export { DataTable } from './DataTable';
+export type { DataTableProps, DataTablePagination } from './DataTable';
