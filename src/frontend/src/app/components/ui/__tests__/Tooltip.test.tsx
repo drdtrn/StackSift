@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Tooltip } from '../Tooltip';
 
@@ -60,8 +60,10 @@ describe('Tooltip', () => {
   it('hides the tooltip on blur', async () => {
     renderTooltip();
     const trigger = screen.getByRole('button');
-    trigger.focus();
-    trigger.blur();
+    await act(async () => {
+      trigger.focus();
+      trigger.blur();
+    });
     expect(screen.getByRole('tooltip').className).toMatch(/opacity-0/);
   });
 });
