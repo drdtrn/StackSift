@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { AuthGuard } from '@/app/components/providers/AuthGuard';
 
 /**
  * Dashboard group layout — persistent navigation shell.
@@ -31,7 +32,8 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-screen">
+    <AuthGuard>
+      <div className="flex min-h-screen">
       {/* Sidebar stub — replaced by <AppShell> after FE-06 merges */}
       <aside
         className="w-56 shrink-0 border-r border-zinc-800 bg-zinc-950 flex flex-col gap-1 px-2 py-4"
@@ -58,7 +60,8 @@ export default function DashboardLayout({
       </aside>
 
       {/* Main content area */}
-      <main className="flex-1 overflow-y-auto p-6">{children}</main>
-    </div>
+        <main className="flex-1 overflow-y-auto p-6">{children}</main>
+      </div>
+    </AuthGuard>
   );
 }

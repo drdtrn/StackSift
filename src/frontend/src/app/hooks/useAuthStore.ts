@@ -21,6 +21,7 @@ interface AuthStore {
   // Actions
   setUser: (user: User) => void;
   setToken: (token: string) => void;
+  setLoading: (loading: boolean) => void;
   /** Full sign-out: clears user, token, and resets isAuthenticated. */
   logout: () => void;
   /** Alias for logout — used internally when a 401 is received. */
@@ -56,6 +57,13 @@ export const useAuthStore = create<AuthStore>()(
           () => ({ token }),
           false,
           'setToken',
+        ),
+
+      setLoading: (loading) =>
+        set(
+          () => ({ isLoading: loading }),
+          false,
+          'setLoading',
         ),
 
       logout: () =>
