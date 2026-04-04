@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AuthGuard } from '@/app/components/providers/AuthGuard';
+import { UserMenu } from '@/app/components/auth/UserMenu';
 
 /**
  * Dashboard group layout — persistent navigation shell.
@@ -57,6 +58,9 @@ export default function DashboardLayout({
             </Link>
           ))}
         </nav>
+
+        {/* User identity + sign out — pushed to sidebar bottom via mt-auto inside UserMenu */}
+        <UserMenu />
       </aside>
 
       {/* Main content area */}
