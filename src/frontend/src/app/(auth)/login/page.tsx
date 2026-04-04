@@ -1,19 +1,46 @@
-import type { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Sign In | StackSift',
+import { useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useSession } from '@/app/hooks/useSession';
+import { useToastStore } from '@/app/hooks/useToastStore';
+
+// ---------------------------------------------------------------------------
+// Error messages shown when Keycloak redirects back with ?error=
+// ---------------------------------------------------------------------------
+const AUTH_ERRORS: Record<string, string> = {
+  auth_cancelled: 'Sign-in was cancelled. Please try again.',
+  missing_params: 'Authentication failed. Please try again.',
+  invalid_state: 'Authentication session expired. Please try again.',
+  token_exchange_failed: 'Could not complete sign-in. Please try again later.',
 };
 
-/**
- * Login page stub.
- *
- * Final implementation (BE-03): clicking "Sign in" will redirect to the
- * Keycloak OIDC authorization endpoint. The redirect URL, client ID, and
- * scopes will be read from environment variables.
- *
- * For now this is a static scaffold so the route exists and the build passes.
- */
-export default function LoginPage() {
+// Inner component — reads searchParams (must be wrapped in Suspense)
+function LoginContent() {
+  const { isAuthenticated, isLoading } = useSession();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const { addToast } = useToastStore();
+
+  const next = searchParams.get('next') ?? '/';
+  const error = searchParams.get('error');
+  const loginHref = `/api/auth/login${next !== '/' ? `?next=${encodeURIComponent(next)}` : ''}`;
+
+  // Show error toast if Keycloak redirected back with an error param.
+  useEffect(() => {
+    if (error) {
+      const message = AUTH_ERRORS[error] ?? 'Sign-in failed. Please try again.';
+      addToast({ variant: 'error', message });
+    }
+  }, [error, addToast]);
+
+  // If already authenticated, redirect to dashboard (or ?next= URL).
+  useEffect(() => {
+    if (!isLoading && isAuthenticated) {
+      router.replace(next.startsWith('/') ? next : '/');
+    }
+  }, [isLoading, isAuthenticated, next, router]);
+
   return (
     <div className="flex flex-col gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-8 shadow-xl">
       <div className="flex flex-col gap-1">
@@ -23,12 +50,11 @@ export default function LoginPage() {
         </p>
       </div>
 
-      {/* Keycloak SSO button — wired up in BE-03 */}
-      <button
-        type="button"
-        disabled
-        className="flex w-full items-center justify-center gap-3 rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3 text-sm font-medium text-zinc-300 opacity-60 cursor-not-allowed"
-        aria-label="Sign in with Google via Keycloak (coming soon)"
+      {/* Sign-in button — href triggers /api/auth/login which starts OIDC flow */}
+      <a
+        href={loginHref}
+        className="flex w-full items-center justify-center gap-3 rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3 text-sm font-medium text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-zinc-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+        aria-label="Sign in with Google via Keycloak"
       >
         <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
           <path
@@ -49,7 +75,7 @@ export default function LoginPage() {
           />
         </svg>
         Continue with Google
-      </button>
+      </a>
 
       <p className="text-center text-xs text-zinc-500">
         By signing in you agree to our Terms of Service and Privacy Policy.
@@ -57,3 +83,19 @@ export default function LoginPage() {
     </div>
   );
 }
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex flex-col gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-8 shadow-xl">
+          <div className="h-8 w-48 rounded bg-zinc-800 animate-pulse" />
+          <div className="h-12 w-full rounded-lg bg-zinc-800 animate-pulse" />
+        </div>
+      }
+    >
+      <LoginContent />
+    </Suspense>
+  );
+}
+
