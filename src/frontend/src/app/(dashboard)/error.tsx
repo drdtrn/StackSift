@@ -1,5 +1,8 @@
 'use client';
 
+import { Card, CardBody } from '@/app/components/ui/Card';
+import { Button } from '@/app/components/ui/Button';
+
 /**
  * Dashboard error boundary.
  *
@@ -18,21 +21,24 @@ export default function DashboardError({
   unstable_retry: () => void;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-20 text-center">
-      <p className="text-4xl">⚠️</p>
-      <h2 className="text-xl font-semibold">Failed to load dashboard</h2>
-      <p className="text-sm text-zinc-400 max-w-sm">
-        {error.message || 'An unexpected error occurred.'}
-      </p>
-      {error.digest && (
-        <p className="font-mono text-xs text-zinc-500">ID: {error.digest}</p>
-      )}
-      <button
-        onClick={unstable_retry}
-        className="mt-2 rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition-colors"
-      >
-        Retry
-      </button>
+    <div className="flex items-center justify-center py-20">
+      <Card role="alert" className="max-w-md w-full">
+        <CardBody className="flex flex-col items-center gap-4 py-10 text-center">
+          <p className="text-4xl" aria-hidden="true">⚠️</p>
+          <div className="flex flex-col gap-1">
+            <h2 className="text-xl font-semibold">Failed to load dashboard</h2>
+            <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm">
+              {error.message || 'An unexpected error occurred. Please try again.'}
+            </p>
+            {error.digest && (
+              <p className="font-mono text-xs text-zinc-400 mt-1">ID: {error.digest}</p>
+            )}
+          </div>
+          <Button onClick={unstable_retry} size="sm">
+            Reload
+          </Button>
+        </CardBody>
+      </Card>
     </div>
   );
 }

@@ -1,7 +1,15 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AuthGuard } from '@/app/components/providers/AuthGuard';
 import { OnboardingGuard } from '@/app/components/providers/OnboardingGuard';
 import { UserMenu } from '@/app/components/auth/UserMenu';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Dashboard — StackSift',
+    template: '%s — StackSift',
+  },
+};
 
 /**
  * Dashboard group layout — persistent navigation shell.

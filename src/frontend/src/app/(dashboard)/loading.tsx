@@ -7,7 +7,9 @@ import { Skeleton } from '@/app/components/ui/Skeleton';
  * It mirrors the structure of page.tsx so the layout shift is minimal when
  * real content replaces the skeletons.
  *
- * Uses the <Skeleton> component from FE-03 — no new UI code needed here.
+ * 3 metric card skeletons match the 3 real metric cards (Active Alerts,
+ * Total Logs Today, Open Incidents). A large area below represents either
+ * the EmptyState or future content panels.
  */
 export default function DashboardLoading() {
   return (
@@ -17,15 +19,15 @@ export default function DashboardLoading() {
         <Skeleton className="h-4 w-64" />
       </div>
 
-      {/* Metric card skeletons */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {Array.from({ length: 4 }).map((_, i) => (
-          <Skeleton key={i} className="h-20 rounded-lg" />
+      {/* 3 metric card skeletons */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        {Array.from({ length: 3 }).map((_, i) => (
+          <Skeleton key={i} className="h-24 rounded-lg" />
         ))}
       </div>
 
-      {/* Incidents table skeleton */}
-      <Skeleton className="h-48 rounded-lg" />
+      {/* Empty state / content area skeleton */}
+      <Skeleton className="h-64 rounded-lg" />
     </div>
   );
 }
