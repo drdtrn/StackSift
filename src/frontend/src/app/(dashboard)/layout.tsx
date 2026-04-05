@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AuthGuard } from '@/app/components/providers/AuthGuard';
+import { OnboardingGuard } from '@/app/components/providers/OnboardingGuard';
 import { UserMenu } from '@/app/components/auth/UserMenu';
 
 /**
@@ -34,6 +35,7 @@ export default function DashboardLayout({
 }) {
   return (
     <AuthGuard>
+      <OnboardingGuard>
       <div className="flex min-h-screen">
       {/* Sidebar stub — replaced by <AppShell> after FE-06 merges */}
       <aside
@@ -66,6 +68,7 @@ export default function DashboardLayout({
       {/* Main content area */}
         <main className="flex-1 overflow-y-auto p-6">{children}</main>
       </div>
+      </OnboardingGuard>
     </AuthGuard>
   );
 }

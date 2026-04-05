@@ -77,6 +77,60 @@ export function generateMockTokens(): MockTokens {
 }
 
 /**
+ * Generates mock tokens for any user — used when updating the session
+ * after organisation creation to inject the new organization_id claim.
+ *
+ * Accepts a partial User so the caller can override only the fields that
+ * changed (e.g. organizationId) while keeping the rest from the original.
+ */
+export function generateMockTokensForUser(user: User): MockTokens {
+  const now = Math.floor(Date.now() / 1_000);
+  const exp = now + 3_600;
+
+  const header = base64UrlJson({ alg: 'RS256', typ: 'JWT', kid: 'mock-key-id' });
+
+  const accessPayload = base64UrlJson({
+    sub: user.id,
+    iss: 'http://localhost:8080/realms/stacksift',
+    aud: 'stacksift-frontend',
+    iat: now,
+    exp,
+    email: user.email,
+    email_verified: true,
+    name: user.displayName,
+    preferred_username: user.email,
+    given_name: user.displayName.split(' ')[0],
+    family_name: user.displayName.split(' ').slice(1).join(' '),
+    realm_access: { roles: MOCK_ROLES },
+    // Only include organization_id when it is set — absence signals onboarding required
+    ...(user.organizationId != null ? { organization_id: user.organizationId } : {}),
+    stacksift_role: user.role,
+  });
+
+  const idPayload = base64UrlJson({
+    sub: user.id,
+    iss: 'http://localhost:8080/realms/stacksift',
+    aud: 'stacksift-frontend',
+    iat: now,
+    exp,
+    nonce: 'mock-nonce',
+    email: user.email,
+    email_verified: true,
+    name: user.displayName,
+    preferred_username: user.email,
+  });
+
+  return {
+    access_token: `${header}.${accessPayload}.mock-signature`,
+    id_token: `${header}.${idPayload}.mock-signature`,
+    refresh_token: `${header}.${base64UrlJson({ sub: user.id, type: 'refresh', exp: now + 86_400 })}.mock-signature`,
+    token_type: 'Bearer',
+    expires_in: 3_600,
+    scope: 'openid profile email',
+  };
+}
+
+/**
  * Extracts the user profile from a mock (or real) access_token.
  * Decodes the JWT payload segment (middle segment, base64url-encoded JSON).
  */
@@ -96,7 +150,7 @@ export function extractUserFromToken(accessToken: string): User | null {
       displayName: claims.name,
       avatarUrl: null,
       role: claims.stacksift_role ?? 'member',
-      organizationId: claims.organization_id ?? '',
+      organizationId: claims.organization_id ?? null,
       createdAt: new Date(claims.iat * 1_000).toISOString(),
       lastLoginAt: new Date().toISOString(),
     };
