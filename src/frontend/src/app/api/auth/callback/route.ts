@@ -1,7 +1,8 @@
 import { type NextRequest, NextResponse } from 'next/server';
 import { authConfig } from '@/app/lib/auth/config';
-import { generateMockTokens } from '@/app/lib/auth/mock';
+import { generateMockTokens, generateMockTokensForUser, MOCK_AUTH_USER } from '@/app/lib/auth/mock';
 import { createSessionCookie } from '@/app/lib/auth/session';
+import type { User } from '@/app/types';
 
 // ---------------------------------------------------------------------------
 // GET /api/auth/callback
@@ -73,7 +74,18 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   if (authConfig.mockMode) {
     // Mock mode: don't call Keycloak, just generate fake tokens.
-    const tokens = generateMockTokens();
+    //
+    // When NEXT_PUBLIC_AUTH_MOCK_NEW_USER=true the "logged in" user has no
+    // organisation — this triggers the US-03 onboarding flow in the browser.
+    // Default (false / unset): use Alice Nguyen who already has an org.
+    const isNewUser = process.env.NEXT_PUBLIC_AUTH_MOCK_NEW_USER === 'true';
+    let tokens: ReturnType<typeof generateMockTokens>;
+    if (isNewUser) {
+      const newUser: User = { ...MOCK_AUTH_USER, organizationId: null };
+      tokens = generateMockTokensForUser(newUser);
+    } else {
+      tokens = generateMockTokens();
+    }
     sessionCookie = createSessionCookie(tokens);
   } else {
     // Real mode: POST to Keycloak token endpoint.

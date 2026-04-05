@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server';
 import { authConfig } from './config';
-import { extractUserFromToken, type MockTokens } from './mock';
+import { extractUserFromToken, generateMockTokensForUser, type MockTokens } from './mock';
 import type { User } from '@/app/types';
 
 // ---------------------------------------------------------------------------
@@ -135,4 +135,20 @@ export function redirectWithClearedSession(url: string): NextResponse {
   const response = NextResponse.redirect(url);
   response.headers.set('Set-Cookie', clearSessionCookie());
   return response;
+}
+
+// ---------------------------------------------------------------------------
+// replaceSessionCookie
+//
+// Builds a new session cookie by regenerating mock tokens for an updated
+// user object. Called after organisation creation to inject organization_id
+// into the session without requiring a full re-login.
+//
+// This only applies in mock mode. In production, Keycloak would issue a
+// fresh token with the org claim via a silent refresh or re-auth.
+// ---------------------------------------------------------------------------
+
+export function replaceSessionCookie(updatedUser: User): string {
+  const tokens = generateMockTokensForUser(updatedUser);
+  return createSessionCookie(tokens);
 }

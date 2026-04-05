@@ -130,7 +130,8 @@ export interface User {
   displayName: string;
   avatarUrl: string | null;
   role: UserRole;
-  organizationId: string;
+  /** null means the user is authenticated but has not created an organisation yet (onboarding). */
+  organizationId: string | null;
   createdAt: string;
   lastLoginAt: string | null;
 }
